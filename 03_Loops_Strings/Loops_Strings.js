@@ -1,4 +1,4 @@
-console.log("Loops And Strings");
+// console.log("Loops And Strings");
 
 // Print 1 to 5
 for (let i = 1; i <= 5; i++) {
@@ -6,7 +6,7 @@ for (let i = 1; i <= 5; i++) {
 }
 console.log("Loop has ended");
 
-// // Calculate Sum of first N numbers
+// Calculate Sum of first N numbers
 let sum = 0;
 let n = 10;
 for (let i = 1; i <= n; i++) {
@@ -53,3 +53,54 @@ while (userNum != gameNum) {
   userNum = prompt("You entered wrong Number guess number again");
 }
 console.log("Congratulations you entered correct Number");
+
+// ---------------------------------------------------------------------//
+// Strings // Strings are Immutable in JS
+let str1 = "Aman";
+let str2 = "Asati";
+
+console.log(str1.length);
+console.log(str2.length);
+
+console.log(str1[0], str1[1], str1[2], str1[3], str1[4]);
+console.log(str2[0], str2[1], str2[2], str2[3], str2[4]);
+
+// Template Literals
+let sentense = `This is a template literal`;
+console.log(sentense);
+
+let obj = {
+  item: "pen",
+  price: 10,
+};
+console.log("The cost of", obj.item, "is", obj.price); // one way
+console.log(`The cost of ${obj.item} is ${obj.price}`); // String Interpolation / Template literals
+console.log("Aman\nAsati"); // Escape Character
+console.log("Aman\tAsati"); // Escape Character
+
+// String Methods
+
+console.log(str1.toUpperCase());
+console.log(str2.toLowerCase());
+
+let testStr = "      Aman Asati   ";
+console.log(testStr);
+console.log(testStr.trim());
+
+let str = "012345678";
+console.log(str.slice(1, 4)); // end index is non inclusive
+console.log(str.slice(2));
+
+let fName = "Aman";
+let lName = "Asati";
+console.log(fName.concat(lName));
+
+console.log(fName.replace("a", "A"));
+console.log(fName.replaceAll("a", "A"));
+
+console.log(fName.charAt(0));
+
+// Practice Question
+
+let userName = prompt("Enter your username without spaces: ");
+console.log("@" + userName);
